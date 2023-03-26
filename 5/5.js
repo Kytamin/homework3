@@ -5,9 +5,7 @@ function checkTotal(arr) {
         total += arr[i]
 
     }
-    console.log(total)
-    totalArr.push(total)
-    return totalArr
+    return total
 }
 
 let totalArr = []
@@ -23,6 +21,10 @@ total3 = checkTotal(arr3)
 console.log(`mảng 3 có tổng là${total3}`)
 total4 = checkTotal(arr4)
 console.log(`mảng 4 có tổng là${total4}`)
+totalArr.push(total1)
+totalArr.push(total2)
+totalArr.push(total3)
+totalArr.push(total4)
 totalArr.sort((a, b) => b - a)
 console.log(`${totalArr[0]} là tổng  lớn nhất`)
 // so sánh với các tổng của arr trên đã in ra suy ra arr3 có tổng các phần tử lớn nhất
