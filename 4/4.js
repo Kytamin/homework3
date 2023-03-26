@@ -1,5 +1,5 @@
-function searchValue () {
-   let arr = [1,1,4,4,2,2,2,3,1,1]
+function searchValue (arr) {
+   
    let foundedValue
    for (let i = 0; i < arr.length; i++) {
       if (i === arr.indexOf(arr[i]) && i === arr.lastIndexOf(arr[i])) {
@@ -11,4 +11,5 @@ function searchValue () {
    }
    return foundedValue
 }
-console.log(`Search value: ${searchValue()}`)
+let arr1 = [1,1,4,4,2,2,2,3,1,1]
+console.log(`Search value: ${searchValue(arr1)}`)
